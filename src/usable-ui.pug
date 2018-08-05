@@ -1,0 +1,140 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Usable UI
+    link(href='https://fonts.googleapis.com/css?family=Heebo', rel='stylesheet')
+    style.
+      html,
+      body {
+      font-family: 'Heebo', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #373737;
+      margin: 0%;
+      }
+      main {
+      max-width: 1100px;
+      min-width: 200px;
+      margin: 0 auto;
+      padding: 10px;
+      }
+      header {
+      padding: 50px;
+      background-color: #dcd0c0;
+      text-align: center;
+      }
+      header h1 {
+      margin: 0%;
+      font-size: 200%;
+      }
+      header h1::-moz-selection {
+      background: #373737;
+      color: #f4f4f4;
+      }
+      header h1::selection {
+      background: #373737;
+      color: #f4f4f4;
+      }
+      header h2::-moz-selection {
+      background: #373737;
+      color: #f4f4f4;
+      }
+      header h2::selection {
+      background: #373737;
+      color: #f4f4f4;
+      }
+      article p {
+      padding-left: 25px;
+      }
+      article ::-moz-selection {
+      background: #373737;
+      color: #f4f4f4;
+      }
+      article ::selection {
+      background: #373737;
+      color: #f4f4f4;
+      }
+      h3 a {
+      color: inherit;
+      text-decoration: none;
+      }
+      small::-moz-selection {
+      background: #373737;
+      color: #f4f4f4;
+      }
+      small::selection {
+      background: #373737;
+      color: #f4f4f4;
+      }
+  body
+    section#page
+      header
+        h1#title Usable UI
+        h2#sub-title Common sense guidelines for making the internet
+      main
+        article#rule-01.rule
+          h3
+            a(href='#rule-01') Rule One: Always use semantic markup
+          p
+            | Semantic HTML allows both end users and developers to quickly and fully understand the structure of a webpage. In addition to making the structure of your content clear, they also allow users with a variety of disabilities to
+            | enjoy your content.
+          p
+            | Please review the HTML5 supported 
+            a(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element') tags
+            |  and use them.
+        article#rule-02.rule
+          h3
+            a(href='#rule-02') Rule Two: Content is your most valuable asset
+          p
+            | Making your website beautiful using CSS and JavaScript is fun and can make your content more compelling, but it should never take the place of making something useful.
+          p
+            | An easy rule of thumb: if you think you may be prioritizing presentation over content, then you probably are.
+        article#rule-03.rule
+          h3
+            a(href='#rule-03') Rule Three: Client side rendering is not the only option
+          p
+            | The UI landscape in 2018 is largely centered around using a UI framework like Vue, React*, or Angular. These frameworks are
+            | smartly put together and with the proper education allow developers to make very fluid feeling UIs.
+            | However, they are not the only respectable way to do web development. Web developers were designing remarkable
+            | web applications long before these frameworks existed and they continue to do so.
+          p
+            | It is my belief that the tooling and configuration involved in using these frameworks generally leads to an obsession over
+            | tooling rather than an obsession over content. There are other options and while it may be difficult, keep
+            | your mind open to the idea that maybe 
+            a(href='https://www.youtube.com/watch?v=k7n2xnOiWI8') frameworks are not the only option
+            | .
+          p
+            | * I am aware that React is a "library", not a framework. Even so the expected tooling set makes it feel very much like a
+            | framework.
+        article#rule-04.rule
+          h3
+            a(href='#rule-04') Rule Four: Users like using their phones
+          p
+            | This is not news to anyone in 2018, but it should still be the first thing you consider immediately after creating clean,
+            | valuable content. If your website is not capable of performing optimally on a mobile device consider
+            | a rewrite, or be open to the idea of informing your users that you would prefer for them to use their
+            | desktop for actions.
+          p
+            | As of 2018 nearly 66% of traffic on the web comes from mobile devices. There is no indication that this trend will be reversed,
+            | please make sure that the mobile phone is a first class citizen when you are designing your website.
+        article#rule-05.rule
+          h3
+            a(href='#rule-05') Rule Five: Consider native html components before producing a hack
+          h4
+            | Classic Joke: When is a checkbox not a checkbox? When it's a 
+            code div
+          p
+            | The native components provided by the web can often look truly awful. I understand this, and if you have a competitor using
+            | a visually striking hack nothing could be more understandable than wanting to compete, but when considering
+            | enterprise customers, or internal customers please consider using native html components.
+          p
+            | Native elements do what they claim to do and they are more performant than their analogous hacks. Additionally, these hacks
+            | are often impossible to access for the disabled. This is a flexible rule, I understand
+            | that prettiness matters and you need to make your money, but when the primary goal is utility and purity
+            | (in code) these elements should not be discounted.
+        hr
+        aside
+          small
+            | Disclaimer: Yes, these rules have exceptions, but, if you prioritize your content and functionality over everything you will find that these exceptions are rare.
