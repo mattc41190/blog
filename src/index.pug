@@ -1,19 +1,63 @@
 html
   head
     title Matts Blog
-    link(href='https://fonts.googleapis.com/css?family=Heebo', rel='stylesheet')
+    link(href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet")
     style.
-      html,
-      body {
-      font-family: 'Heebo', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #373737;
-      margin: 0%;
-      text-align: center;
+      html, body{
+        height: 100%;
+        background: honeydew;
+        margin: 0;
+        font-family: 'Muli', sans-serif;
       }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        height: 100%;
+      }
+      
+      header {
+        height: 50%;
+        min-height: 200px;
+        background: #c44e5a;
+      }
+      
+      .title-box {
+        padding: 20px;
+        min-width: 300px;
+        max-width: 600px;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2em;
+      }
+      
+      .title-box h1 {
+        margin: 0;
+        font-size: 3em;
+      }
+      
+      main {
+        background: #f7efd2;
+        height:100%;
+      }
+      
+      p, a, h2 {
+        margin: 0;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        padding-top: 10px;
+      }
+      
   body
-    h1 Articles
-    p
-      a(href="./usable-ui.html") Usable UI Guidelines
-    p
-      a(href="./learn-go-guide.html") Learn Go Guide
+    section.container
+      header
+        section.title-box
+          h1.title Articles
+          h4.by-line Written by Matthew Cale
+      main
+        p
+          h2 #[a(href="./usable-ui.html") Usable UI Guidelines]
+        p
+          h2 #[a(href="./learn-go-guide.html") Learn Go Guide]
